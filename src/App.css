@@ -40,10 +40,12 @@
 }
 
 .seats button:hover{
-  cursor:pointer;
   font-weight:700;
 }
 
+button:disabled{
+  cursor:not-allowed;
+}
 
 .vip .seats {
   max-width: 12rem;
