@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  height: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.vip , .general , .economic{
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.vip h1, .general h1 , .economic h1{
+  text-align:center;
+  margin-bottom:1rem;
+}
+
+.seats{
+  display: flex;
+  gap: .5rem;
+  flex-wrap:wrap;
+}
+
+.seats button{
+  height: 2rem;
+  width: 2rem;
+  text-align:center;
+  line-height: 2rem;
+  background-color: blueviolet;
+  outline:none;
+  border:none;
+}
+
+.seats button:hover{
+  cursor:pointer;
+  font-weight:700;
+}
+
+
+.vip .seats {
+  max-width: 12rem;
+}
+.general .seats {
+  max-width: 14.5rem;
+}
+.economic .seats {
+  max-width: 19.5rem;
+}
+
+.submit{
+  padding: .5rem 2rem;
+  margin-bottom: 2rem;
+  background-color: green;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  outline: none;
+  border: none;
 }
